@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual exploration of gender gaps in education, work, care, and income in Mexico.">
+  <meta property="og:title" content="More education, unequal opportunities">
+  <meta property="og:description" content="Exploring gender gaps in education, work, care, and income in Mexico.">
+  <meta property="og:type" content="article">
+  <title>More education, unequal opportunities | Jocelyn Sanchez Mendoza</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#story">Skip to article</a>
+
+  <header class="masthead">
+    <a class="wordmark" href="#">Jocelyn Sanchez Mendoza<span> / Data stories</span></a>
+    <a href="#sources">Sources & methods ↗</a>
+  </header>
+
+  <main id="story">
+    <header class="hero">
+      <p class="eyebrow">Mexico · Education · Economic opportunity</p>
+      <h1>How far has Mexico come<br><em>toward gender equality?</em></h1>
+      <p class="dek">
+        Women have made gains in education. <br>
+        Equality at home and work remains a distant goal. 
+      </p>
+      <p class="byline">By Brenda Jocelyn Sanchez Mendoza</p>
+      <div class="hero-bottom">
+        <span>A visual exploration · 1990–2026</span>
+        <a href="#education">Explore the story ↓</a>
+      </div>
+    </header>
+
+    <nav class="contents" aria-label="Article sections">
+      <a href="#education">01 Education</a>
+      <a href="#work">02 Work</a>
+      <a href="#care">03 Care</a>
+      <a href="#income">04 Income & assets</a>
+    </nav>
+
+    <div class="prose introduction">
+        <p>
+            This story moves from the classroom to the workplace and the household,
+            tracing educational progress alongside persistent inequalities in work,
+            care, and economic resources.
+        </p>
+        <p>
+            It brings together a historical education series and snapshots from
+            different years to explore how these dimensions of inequality connect.
+        </p>
+        </div>
+
+    <section class="chapter" id="education">
+      <header class="chapter-heading prose">
+        <p class="eyebrow">01 / Education</p>
+        <h2>A gap that has nearly closed</h2>
+        <p>
+          Between 1990 and 2020, the share of women with higher education
+          increased from 5.4% to 17.5%. For men, it rose from 7.4% to 17.6%.
+          The difference narrowed from 2.0 to 0.1 percentage points.
+        </p>
+      </header>
+
+      <figure>
+        <img src="images/higher_education_mexico.svg"
+             alt="Higher education increased for women and men between 1990 and 2020, with their shares nearly converging."
+             loading="lazy">
+        <figcaption>
+          <span class="figure-number">FIG. 01</span>
+          Source: INEGI, SIESVIM, Table 618.
+          Percentages use the population aged 5 and older as the denominator.
+        </figcaption>
+      </figure>
+
+      <div class="prose">
+        <h3>A different picture across generations</h3>
+        <p>
+          Older women average fewer years of schooling than men of the same
+          age. Among those aged 15–29, women hold a small advantage.
+        </p>
+      </div>
+
+      <figure>
+        <img src="images/avarage_years_of_schooling.svg"
+             alt="Schooling differences favor men in older age groups and women slightly in the youngest group."
+             loading="lazy">
+        <figcaption>
+          <span class="figure-number">FIG. 02</span>
+          Source: INEGI, 2025 tabulations with a gender perspective, Table 11.
+          Differences are women’s minus men’s average years of schooling.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter" id="work">
+      <header class="chapter-heading prose">
+        <p class="eyebrow">02 / Work</p>
+        <h2>Educational progress coexists with unequal labor force participation</h2>
+        <p>
+          Men’s labor force participation exceeds women’s in every age
+          group shown. Among adults aged 30–59, the rates are
+          93.0% for men and 56.0% for women.
+        </p>
+      </header>
+
+      <aside class="takeaway">
+        <strong>37<span>percentage points</span></strong>
+        <p>The participation gap between men and women aged 30–59.</p>
+      </aside>
+
+      <figure>
+        <img src="images/labor_force_participation.svg"
+             alt="Men participate in the labor force at higher rates in every age group; the largest gap is 37 percentage points."
+             loading="lazy">
+        <figcaption>
+          <span class="figure-number">FIG. 03</span>
+          Source: INEGI, 2025 tabulations with a gender perspective.
+          Labor force participation includes people employed or actively
+          seeking work. Gaps are expressed in percentage points.
+        </figcaption>
+      </figure>
+
+      <div class="prose">
+        <h3>Geography adds another dimension</h3>
+        <p>
+          The national gender gap is far from uniform across Mexico. 
+          The map reveals substantial differences in labor force participation 
+          between women and men aged 30–59 across states. These disparities are 
+          particularly pronounced in southern Mexico, where women's 
+          participation in the labor force is significantly lower. Notably, 
+          these states are also among the poorest in the country, 
+          highlighting the intersection between gender inequality and regional 
+          economic disparities.
+        </p>
+      </div>
+
+      <figure class="map">
+        <img src="images/map_labor_force_gap.svg"
+             alt="Map of state-level gender gaps in labor force participation among adults aged 30–59 in 2025."
+             loading="lazy">
+        <figcaption>
+          <span class="figure-number">FIG. 04</span>
+          Source: INEGI, 2025 tabulations with a gender perspective.
+          Map values are women’s minus men’s participation rates,
+          in percentage points.
+          Geometry:
+          <a href="https://github.com/angelnmara/geojson">Mexico GeoJSON</a>.
+        </figcaption>
+      </figure>
+
+      <div class="prose">
+        <h3>Outside the labor force, activities differ sharply</h3>
+        <p>
+          Among those who report being outside the labor force, the story looks 
+          very different for women and men. Traditional gender roles remain 
+          evident: 61.5% of women in this situation report household duties as 
+          their main activity, compared with just 5.4% of men. In contrast, 
+          50.3% of men outside the labor force are students, compared with 
+          24.3% of women. These differences highlight how gender continues to 
+          shape what women and men do outside the labor market, with domestic 
+          responsibilities falling disproportionately on women.
+        </p>
+      </div>
+
+      <figure>
+        <img src="images/inactive_population_activities.svg"
+             alt="Household duties account for most women outside the labor force, while students account for about half of men."
+             loading="lazy">
+        <figcaption>
+          <span class="figure-number">FIG. 05</span>
+          Source: INEGI, 2025 tabulations with a gender perspective, Table 13.
+          Each bar describes the distribution within that sex’s population
+          outside the labor force and sums to 100%.
+          “Other” corresponds to “Personas en otras actividades no económicas.”
+          Labels appear for shares of at least 5%.
+        </figcaption>
+      </figure>
+
+      <p class="prose bridge">
+        These percentages do not describe how many women and men study
+        overall. They describe different populations outside the labor
+        force—and bring domestic responsibilities into the story.
+      </p>
+    </section>
+
+    <section class="chapter" id="care">
+      <header class="chapter-heading prose">
+        <p class="eyebrow">03 / Care</p>
+        <h2>Who provides care—and at what cost?</h2>
+        <p>
+          In 2022, approximately 87 out of every 100 primary caregivers
+          were women. The distribution of care is unequal in both
+          the people involved and the time they contribute.
+        </p>
+      </header>
+
+      <figure>
+        <img src="images/care_numbers.svg"
+             alt="Approximately 87 of every 100 primary caregivers in Mexico are women."
+             loading="lazy">
+        <figcaption>
+          <span class="figure-number">FIG. 06</span>
+          Source: INEGI, National Survey for the Care System
+          (ENASIC), 2022. Each square represents approximately
+          one out of every 100 primary caregivers.
+        </figcaption>
+      </figure>
+
+      <div class="prose">
+        <h3>Women report more caregiving hours</h3>
+        <p>
+          Among people providing care to children, older adults, or
+          temporarily ill members of their own household, women average
+          36.3 hours per week and men 25.4—a difference of 10.9 hours.
+          Women also report more hours in the other recipient groups shown.
+        </p>
+      </div>
+
+      <figure>
+        <img src="images/time_dedicated_to_care_cost.svg"
+             alt="Women spend more weekly hours providing care in each recipient group shown."
+             loading="lazy">
+        <figcaption>
+          <span class="figure-number">FIG. 07</span>
+          Source: INEGI, ENASIC 2022, Table 3.15.
+          Care providers are aged 15 and older; colors identify their sex.
+          The first recipient group includes household members aged 0–17,
+          aged 60+, or temporarily ill, excluding those with disability
+          or dependency covered by the separate category.
+          Recipient groups may overlap and hours should not be added.
+          This chart covers care providers, a different population
+          from primary caregivers in Figure 6.
+        </figcaption>
+      </figure>
+
+      <div class="prose">
+        <h3>The opportunity cost of caregiving</h3>
+        <p>
+          Reported impacts connect care with economic constraints.
+          Among the caregivers represented below, 28.8% of women
+          report being unable to work outside the home, compared with
+          8.0% of men. Another 23.0% of women report having stopped
+          working, compared with 11.4% of men.
+        </p>
+        <p>
+          Women also report higher shares of financial difficulties
+          and lost career opportunities. Men report a slightly higher
+          share of reduced working hours or scheduling difficulties.
+        </p>
+      </div>
+
+      <figure>
+        <img src="images/opportunity_cost.svg"
+             alt="Women caregivers report higher shares of most economic and work impacts, including inability to work outside the home."
+             loading="lazy">
+        <figcaption>
+          <span class="figure-number">FIG. 08</span>
+          Source: INEGI, ENASIC 2022.
+          Categories describe reported impacts and should not be added.
+          Differences are women’s minus men’s shares, in percentage points.
+          These responses do not isolate a causal effect of caregiving.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter" id="income">
+      <header class="chapter-heading prose">
+        <p class="eyebrow">04 / Income & assets</p>
+        <h2>More schooling, persistent income differences</h2>
+        <p>
+          In the second quarter of 2026, women earned less than men across 
+          every education level in Mexico, even among workers aged 15 and older 
+          working at least 35 hours per week and reporting positive income.
+        </p>
+        <p>
+          The largest gender income gaps are found among workers with technical 
+          or teacher training (21.2%), primary education or less (21.0%), and 
+          secondary education (20.6%). Although average earnings increase with 
+          educational attainment for both women and men, the gender gap 
+          persists even at the highest levels of education, reaching 19.7% 
+          among postgraduate workers.
+        </p>
+        <p>
+          These findings suggest that while education is associated with higher 
+          earnings, it does not eliminate gender disparities in labor income.
+        </p>
+      </header>
+
+      <figure>
+        <img src="images/income_gap.svg"
+             alt="Women’s average monthly labor income is lower across all six education groups, including university and postgraduate education."
+             loading="lazy">
+        <figcaption>
+          <span class="figure-number">FIG. 09</span>
+          Source: Author’s calculations using INEGI, ENOE, Q2 2026.
+          Weighted means among workers aged 15+ working 35–168 hours
+          per week and reporting positive monthly labor income.
+          Education indicates the highest level with approved coursework,
+          which may be incomplete. Technical and teacher training are combined.
+          Gap = (men’s mean − women’s mean) / men’s mean × 100.
+        </figcaption>
+      </figure>
+
+      <div class="prose method-callout">
+        <h3>What this income comparison captures</h3>
+        <p>
+          Positive income amounts are available for approximately
+          48–74% of each education–sex group, with lower coverage at
+          university and postgraduate levels. The estimates describe
+          workers reporting those amounts.
+        </p>
+        <p>
+          Monthly income differences also reflect hours, occupations,
+          experience, and other characteristics. They are not estimates
+          of unequal pay for identical work.
+        </p>
+      </div>
+
+      <div class="prose">
+        <h3>Access to resources extends beyond earnings</h3>
+        <p>
+          Vehicle availability is 15.5 percentage points higher in
+          households with a male reference person. This measures
+          household access, rather than individual vehicle ownership.
+          The separate housing indicator shows a 16.7 percentage
+          point gap in sole ownership between men and women.
+        </p>
+      </div>
+
+      <figure>
+        <img src="images/ownership.svg"
+             alt="Gender differences in household vehicle availability and sole home ownership."
+             loading="lazy">
+        <figcaption>
+          <span class="figure-number">FIG. 10</span>
+          Source: INEGI, 2025 tabulations with a gender perspective,
+          Tables 22 and 24. The indicators have different populations:
+          vehicle availability concerns households by reference person’s
+          sex; sole ownership concerns the owner-occupied housing measure.
+          Neither indicator describes all women’s or men’s personal assets.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="closing prose">
+      <p class="eyebrow">Looking across the evidence</p>
+      <h2>Education is part of the story.</h2>
+      <p>
+        Educational opportunities have changed substantially across
+        generations. Progress in schooling now coexists with persistent
+        gaps in participation, caregiving time, reported economic impacts,
+        earnings, and access to resources.
+      </p>
+      <p>
+        These data do not establish a single explanation.
+        They show why understanding women’s economic opportunities
+        requires looking across the classroom, the workplace,
+        and the household.
+      </p>
+    </section>
+
+    <section class="sources prose" id="sources">
+      <p class="eyebrow">About the analysis</p>
+      <h2>Sources & methods</h2>
+      <p>
+        The article combines separate datasets and reference years.
+        Only the 1990–2020 higher education chart presents a historical
+        series. Age comparisons describe different groups at one point
+        in time. Indicators with different populations or denominators
+        should not be compared as if they measured the same outcome.
+      </p>
+
+      <ul>
+        <li>
+          <a href="https://www.inegi.org.mx/">
+            INEGI: SIESVIM and 2025 tabulations with a gender perspective
+          </a>.
+          Education, participation, activities outside the labor force,
+          and household assets. Table references appear under each figure.
+        </li>
+        <li>
+          <a href="https://www.inegi.org.mx/programas/enasic/2022/">
+            INEGI: ENASIC 2022
+          </a>.
+          Primary caregivers, weekly care hours, and reported impacts.
+        </li>
+        <li>
+          <a href="https://www.inegi.org.mx/programas/enoe/15ymas/">
+            INEGI: ENOE, Q2 2026
+          </a>.
+          Income calculations use the SDEM file, quarterly expansion
+          weights, and reported monthly labor income.
+        </li>
+        <li>
+          <a href="https://github.com/angelnmara/geojson">
+            Mexico GeoJSON
+          </a>.
+          State boundaries used for the participation map.
+        </li>
+      </ul>
+
+      <h3>Income calculation</h3>
+      <p>
+        The sample retains completed interviews, current residents,
+        occupied people aged 15+, valid education and sex categories,
+        positive quarterly weights, weekly hours of 35–168, and positive
+        reported monthly income. Weighted means are calculated separately
+        by education and sex using INEGI’s quarterly expansion factor.
+        Differences are descriptive; no significance tests or causal
+        estimates are presented.
+      </p>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Research, analysis & visualization by Brenda Jocelyn Sanchez Mendoza</p>
+    <a href="https://github.com/jocelynsanchezm/data-viz-project">
+      Explore the code ↗
+    </a>
+    <a href="#">Back to top ↑</a>
+  </footer>
+</body>
+</html>
